@@ -134,7 +134,7 @@ class ECLEntry:
             else:
                 if level and (not elem.tail or not elem.tail.strip()):
                     elem.tail = j
-            return elem     
+            return elem
 
         if pretty:
             # ET.indent(self._entry)
