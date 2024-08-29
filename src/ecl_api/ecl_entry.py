@@ -115,7 +115,28 @@ class ECLEntry:
         Args:
             pretty (bool): If True, adds indentations
         '''
+
+        def indent(elem, level=0):
+            '''
+            Indents xml text
+            '''
+            i = "\n" + level*"  "
+            j = "\n" + (level-1)*"  "
+            if len(elem):
+                if not elem.text or not elem.text.strip():
+                    elem.text = i + "  "
+                if not elem.tail or not elem.tail.strip():
+                    elem.tail = i
+                for subelem in elem:
+                    indent(subelem, level+1)
+                if not elem.tail or not elem.tail.strip():
+                    elem.tail = j
+            else:
+                if level and (not elem.tail or not elem.tail.strip()):
+                    elem.tail = j
+            return elem     
+
         if pretty:
-            ET.indent(self._entry)
-        # return ET.tostring(self._entry, encoding='unicode')
+            # ET.indent(self._entry)
+            indent(self._entry)
         return ET.tostring(self._entry).decode('UTF-8')
