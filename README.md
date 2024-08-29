@@ -2,6 +2,7 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/ecl-api.svg)](https://pypi.org/project/ecl-api)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ecl-api.svg)](https://pypi.org/project/ecl-api)
+![pylint](https://github.com/marcodeltutto/ecl-api/actions/workflows/pylint.yml/badge.svg)
 
 -----
 
