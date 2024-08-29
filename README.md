@@ -6,6 +6,8 @@
 
 -----
 
+The Electronic Collaboration Logbook ([ECL](https://cdcvs.fnal.gov/redmine/projects/crl)) is an e-logbook used at FNAL. This package allows retrieving and posting entries via Python using the ECL [XML/REST API](https://cdcvs.fnal.gov/redmine/projects/crl/wiki/ECL_XML_API).
+
 ## Table of Contents
 
 - [Installation](#installation)

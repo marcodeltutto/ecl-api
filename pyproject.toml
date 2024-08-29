@@ -29,9 +29,9 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/Marco Del Tutto/ecl-api#readme"
-Issues = "https://github.com/Marco Del Tutto/ecl-api/issues"
-Source = "https://github.com/Marco Del Tutto/ecl-api"
+Documentation = "https://github.com/marcodeltutto/ecl-api#readme"
+Issues = "https://github.com/marcodeltutto/ecl-api/issues"
+Source = "https://github.com/marcodeltutto/ecl-api"
 
 [tool.hatch.version]
 path = "src/ecl_api/__about__.py"
